@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > TeamForge
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > TeamForge is a sharing and colaboration tool for people or groups of people with ideas.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Users can create 'projects' and share them with other users within their group. Users can view other projects and comment on them and/or follow them. When an organization tackles a problem, brainstorming approaches is essential, but often difficult to keep organized. TeamForge allows users to share their ideas and discuss other's ideas in an organized way that is inviting and easy to navigate.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > There isn't a good way to share and collaborate on project ideas within a group.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > TeamForge provides an easy and direct way to share and collaborate on project ideas.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > It's the job that's never started that takes longest to finish.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Starting with a Yeoman scaffolding for a MEAN stack application, we can add the functionality and utiliy needed to give users accounts, then allow users to create projects. Then, we will allow users to post comments on other projects. From there we will add the ability for users to create/join groups so that users can share their project within a group or make it public.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > TeamForge brought organization and essential collaboration to our team and enabled us to cure cancer.
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > If you manage or work with a team that is trying to achieve anyhting. Sign up for TeamForge to streamline collaboration and maximize productivity.
