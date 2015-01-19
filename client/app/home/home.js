@@ -5,6 +5,7 @@ angular.module('teamforgeApp')
     $routeProvider
       .when('/home', {
         templateUrl: 'app/home/home.html',
-        controller: 'HomeCtrl'
+        controller: 'HomeCtrl',
+        authenticate: true
       });
   });
