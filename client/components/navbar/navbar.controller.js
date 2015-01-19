@@ -2,10 +2,10 @@
 
 angular.module('teamforgeApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
-    $scope.menu = [{
-      'title': 'Home',
-      'link': '/'
-    }];
+    $scope.menu = [
+      { 'title': 'Home', 'link': '/home' },
+      { 'title': 'Create a Project', 'link': '/create-project' }
+    ];
 
     $scope.isCollapsed = true;
     $scope.isLoggedIn = Auth.isLoggedIn;
