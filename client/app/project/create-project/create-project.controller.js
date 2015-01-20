@@ -8,7 +8,7 @@ angular.module('teamforgeApp')
       $http.get( '/api/projects', {params: {title: $scope.newTitle}} )
         .success(function(project) {
           console.log(project);
-          if (project.length) alert('A project with that name already exists, please choose a different title.');
+          if (project[0]) alert('A project with that name already exists, please choose a different title.');
           else $scope.createProject();
         })
         .error(function(error) {

@@ -5,14 +5,13 @@ angular.module('teamforgeApp')
 
     var currentUser = Auth.getCurrentUser().name;
 
-    var getProject = function(next) {
+    var getProject = function() {
 	    $http.get('/api/projects/'+$location.hash())
 	    	.success(function(project) {
 	      	$scope.project = project;
           $scope.projectTitle = project.title;
           $scope.projectSummary = project.summary;
           $scope.projectDetails = project.details;
-          if (next) next();
 	    	})
 	    	.error(function(error) {
 			    console.log('ERROR: ', error);

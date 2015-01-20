@@ -18,7 +18,6 @@ angular.module('teamforgeApp')
     };
     getProject();
 
-
     // Allows users to add comments to a project
     $scope.addComment = function() {
     	var comment = {
@@ -27,7 +26,6 @@ angular.module('teamforgeApp')
     	};
     	getProject();
     	$scope.project.comments.push(comment);
-    	console.log($scope.project.comments);
     	$http.put('/api/projects/'+$location.hash(), $scope.project);
     	getProject();
     	$scope.newComment = '';
