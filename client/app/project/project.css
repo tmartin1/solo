@@ -11,3 +11,24 @@
 .project-builder textarea:focus {
 	outline: auto 5px -webkit-focus-ring-color;
 }
+
+.comment-container ul {
+	list-style-type: none;
+}
+
+.comment-container li {
+	list-style-type: none;
+	background-color: #F5F5F8;
+	border-radius: 100px;
+	margin: 10px 0px;
+	padding: 5px 20px;
+}
+
+.comment-container h5 {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.comment-container p {
+	font-style: italic;
+}
