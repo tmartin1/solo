@@ -4,9 +4,11 @@ var _ = require('lodash');
 var Project = require('./project.model');
 
 // Get list of projects
-exports.index = function(req, res) {  
-  Project.find(req.params)
-    .exec(function (err, projects) {
+exports.index = function(req, res) {
+  req.params = req.params || {};
+  var source = req.url.split('?')[1].split('=');
+  req.params[source[0]] = source[1].replace('+',' ');
+  Project.find(req.params, function (err, projects) {
     if(err) { return handleError(res, err); }
     return res.json(200, projects);
   });

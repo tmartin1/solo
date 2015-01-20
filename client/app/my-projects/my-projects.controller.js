@@ -5,6 +5,12 @@ angular.module('teamforgeApp')
     
     $scope.myProjects = [];
 
-    $http
+    $http.get( '/api/projects', {params: {ownerName: Auth.getCurrentUser().name}} )
+    	.success(function(projects) {
+    		$scope.myProjects = projects;
+    	})
+    	.error(function(error) {
+		    console.log('ERROR: ', error);
+			});
 
   });
