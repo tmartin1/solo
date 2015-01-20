@@ -5,7 +5,12 @@ angular.module('teamforgeApp')
     
     $scope.projects = [];
     
-    $http.get('/api/projects').success(function(projects) {
-      $scope.projects = projects;
-    });
+    $http.get('/api/projects')
+    	.success(function(projects) {
+      	$scope.projects = projects;
+    	})
+    	.error(function(error) {
+		    console.log('ERROR: ', error);
+		  });
+
   });
