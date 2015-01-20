@@ -1,0 +1,11 @@
+<li class="project-abstract">
+	<a href="/view-project/#{{project._id}}" tooltip="{{project.details}}">
+  	<h4> {{ project.title }} </h4>
+  	<p> {{ project.summary }} </p>
+		<div class="stat-bar">
+			By: {{ project.ownerName }} 
+			Likes: {{ project.likes }} 
+			Comments: {{ project.comments.length }}
+  	</div>
+	</a>
+</li>
