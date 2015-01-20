@@ -4,7 +4,8 @@ angular.module('teamforgeApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
     $scope.menu = [
       { 'title': 'Home', 'link': '/home' },
-      { 'title': 'Create a Project', 'link': '/create-project' }
+      { 'title': 'My Projects', 'link': '/my-projects' },
+      { 'title': 'New Project', 'link': '/create-project' }
     ];
 
     $scope.isCollapsed = true;
