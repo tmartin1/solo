@@ -1,3 +1,22 @@
-<div class="col-md-12">
-This is the view-project view.
+<header class="hero-unit" id="banner" ng-click="test()">
+  <div class="container">
+    <label><h3> {{ project.title }} </h3>
+    <p class="lead"> Created by: {{ project.ownerName }} </p></label>
+  </div>
+</header>
+<br>
+<div class="container">
+  <div class="row">
+  	<h4>Summary</h4>
+  	<p> {{ project.summary }} </p>
+  	<hr>
+  	<h4>Details</h4>
+  	<p> {{ project.details }} </p>
+	  <hr>
+	  <h4>Discussion</h4>
+  	<div class="comments">
+  		<!-- <p ng-repeat="{{ comment in comments }}"></p> -->
+  	</div>
+
+  </div>
 </div>
