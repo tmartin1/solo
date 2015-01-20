@@ -1,16 +1,19 @@
 <header class="hero-unit" id="banner">
   <div class="container">
     <label><h1>Share. Create. Collaborate.</h1>
-    <p class="lead">Check out the projects below or <a href="#">create your own!</a></p></label>
+    <p class="lead">Check out the projects below or create your own!</p></label>
   </div>
 </header>
 
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <h1 class="page-header">Features:</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
-        <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}</a></li>
+      <h1 class="page-header">Projects:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="project in projects">
+        <li><a href="/view-project/{{project._id}}" tooltip="{{project.details}}">
+        	<h4> {{ project.title }} </h4>
+        	<p> {{ project.summary }} </p>
+        </a></li>
       </ul>
     </div>
   </div>
