@@ -32,3 +32,8 @@
 .comment-container p {
 	font-style: italic;
 }
+
+.right-menu {
+	background-color: gray;
+	float: right;
+}
