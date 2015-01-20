@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('teamforgeApp')
-  .controller('CreateProjectCtrl', function ($scope, $http, Auth, $location) {
+  .controller('CreateProjectCtrl', function ($scope, $http, $location, Auth) {
     
     $scope.createProject = function() {
       $http.post('/api/projects', {

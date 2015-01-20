@@ -13,9 +13,26 @@
   	<h4>Details</h4>
   	<p> {{ project.details }} </p>
 	  <hr>
+  	<hr>
 	  <h4>Discussion</h4>
-  	<div class="comments">
-  		<!-- <p ng-repeat="{{ comment in comments }}"></p> -->
+  	<div class="comment-container">
+  		<ul>
+  			<li ng-repeat="comment in project.comments">
+  				<h5> {{ comment.username }} </h5>
+  				<p> {{ comment.text }} </p>
+  			</li>
+  		</ul>
+  		<br>
+			<form>
+			  <label>Share your thoughts</label>
+			  <p class="input-group">
+			    <input type="text" class="form-control" placeholder="Add your comment here." ng-model="newComment">
+			    <span class="input-group-btn">
+			      <button type="submit" class="btn btn-primary" ng-click="addComment()">Comment</button>
+			    </span>
+			  </p>
+			</form>
+
   	</div>
 
   </div>
