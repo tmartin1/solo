@@ -2,21 +2,13 @@
 
 angular.module('teamforgeApp')
   .controller('MainCtrl', function ($scope, $http) {
-    $scope.awesomeThings = [];
+    $scope.gettingStarted = [
+      { name: 'Join a Group', link: '' },
+      { name: 'Start a Group', link: '' },
+      { name: 'View Projects in Your Group', link: 'home' },
+      { name: 'View Public Projects', link: 'home' },
+      { name: 'Create a Project', link: 'create-project' },
+      { name: 'Review Your Projects', link: '' }
+    ];
 
-    $http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
-    });
-
-    $scope.addThing = function() {
-      if($scope.newThing === '') {
-        return;
-      }
-      $http.post('/api/things', { name: $scope.newThing });
-      $scope.newThing = '';
-    };
-
-    $scope.deleteThing = function(thing) {
-      $http.delete('/api/things/' + thing._id);
-    };
   });
