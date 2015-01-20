@@ -5,13 +5,20 @@ var Project = require('./project.model');
 
 // Get list of projects
 exports.index = function(req, res) {
-  req.params = req.params || {};
-  var source = req.url.split('?')[1].split('=');
-  req.params[source[0]] = source[1].replace('+',' ');
-  Project.find(req.params, function (err, projects) {
-    if(err) { return handleError(res, err); }
-    return res.json(200, projects);
-  });
+  var params = {};
+  if(req.url.match(/[?]/)) {
+    var source = req.url.split('?')[1].split('=');
+    params[source[0]] = source[1].replace('+',' ');
+    Project.find(params, function (err, projects) {
+      if(err) { return handleError(res, err); }
+      return res.json(200, projects);
+    });
+  } else {
+    Project.find(function (err, projects) {
+      if(err) { return handleError(res, err); }
+      return res.json(200, projects);
+    });
+  }
 };
 
 // Get a single project
