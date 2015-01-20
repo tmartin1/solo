@@ -1,0 +1,13 @@
+.project-builder {
+	width: 100%;
+}
+
+.project-builder input, textarea {
+	width: 100%;
+	border: 1px solid rgb(213, 213, 213);
+	margin-bottom: 20px;
+}
+
+.project-builder textarea:focus {
+	outline: auto 5px -webkit-focus-ring-color;
+}
