@@ -40,7 +40,11 @@ exports.create = function(req, res) {
 
 // Updates an existing project in the DB.
 exports.update = function(req, res) {
+  console.log(req.body);
   if(req.body._id) { delete req.body._id; }
+  if(req.body._ownerId) { delete req.body._ownerId; }
+  if(req.body.ownerName) { delete req.body.ownerName; }
+  if(req.body.comments) { delete req.body.comments; }
   Project.findById(req.params.id, function (err, project) {
     if (err) { return handleError(res, err); }
     if(!project) { return res.send(404); }
@@ -54,6 +58,7 @@ exports.update = function(req, res) {
 
 // Deletes a project from the DB.
 exports.destroy = function(req, res) {
+  console.log(req.body);
   Project.findById(req.params.id, function (err, project) {
     if(err) { return handleError(res, err); }
     if(!project) { return res.send(404); }
