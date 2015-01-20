@@ -28,9 +28,4 @@ angular.module('teamforgeApp')
     	$scope.newComment = '';
     };
 
-    $scope.test = function() {
-    	console.log($scope.project.comments);
-    };
-
-
   });
