@@ -44,7 +44,7 @@ exports.update = function(req, res) {
   if(req.body._id) { delete req.body._id; }
   if(req.body._ownerId) { delete req.body._ownerId; }
   if(req.body.ownerName) { delete req.body.ownerName; }
-  if(req.body.comments) { delete req.body.comments; }
+  // if(req.body.comments) { delete req.body.comments; }
   Project.findById(req.params.id, function (err, project) {
     if (err) { return handleError(res, err); }
     if(!project) { return res.send(404); }

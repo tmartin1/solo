@@ -17,8 +17,8 @@
   	<hr>
 	  <h4>Discussion</h4>
   	<div class="comment-container">
-  		<ul>
-  			<li ng-repeat="comment in project.comments">
+  		<ul ng-repeat="comment in project.comments">
+  			<li>
   				<h5> {{ comment.username }} </h5>
   				<p> {{ comment.text }} </p>
   			</li>
