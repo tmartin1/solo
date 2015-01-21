@@ -40,7 +40,6 @@ exports.create = function(req, res) {
 
 // Updates an existing project in the DB.
 exports.update = function(req, res) {
-  console.log(req.body);
   if(req.body._id) { delete req.body._id; }
   if(req.body._ownerId) { delete req.body._ownerId; }
   if(req.body.ownerName) { delete req.body.ownerName; }
