@@ -1,5 +1,5 @@
 # TeamForge
-[![Circle CI](https://circleci.com/gh/tmartin1/teamforge/tree/master.svg?style=svg)](https://circleci.com/gh/tmartin1/teamforge/tree/dev)
+[![Circle CI](https://circleci.com/gh/tmartin1/teamforge/tree/master.svg?style=svg)](https://circleci.com/gh/tmartin1/teamforge/tree/master)
 
 TeamForge is an open environment to share your ideas and collaborate with friends, colleagues, or others who share your passion.
 
