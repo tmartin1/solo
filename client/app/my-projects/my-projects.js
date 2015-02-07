@@ -1,10 +1,11 @@
 'use strict';
 
 angular.module('teamforgeApp')
-  .config(function ($routeProvider) {
+  .config(function($routeProvider) {
     $routeProvider
       .when('/my-projects', {
         templateUrl: 'app/my-projects/my-projects.html',
-        controller: 'MyProjectsCtrl'
+        controller: 'MyProjectsCtrl',
+        authenticate: true
       });
   });
