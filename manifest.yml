@@ -2,8 +2,8 @@ applications:
 - disk_quota: 1024M
   host: teamforge
   name: TeamForge
-  command: node server/app.js
-  path: .
+  command: node app.js
+  path: ./server
   domain: mybluemix.net
   instances: 1
   memory: 128M
