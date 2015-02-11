@@ -1,0 +1,39 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <label><h2>My Projects</h2>
+    <p class="lead">Update your projects or see what others have said.</p></label>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+    	<h2>My Projects</h2>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="project in myProjects">
+        <!-- <div ng-include="'components/project-tile/project-tile.html'"></div> -->
+
+        <li class="project-abstract">
+        	<a href="/view-project/#{{project._id}}" tooltip="{{project.details}}">
+	        	<h4> {{ project.title }} </h4>
+	        	<p> {{ project.summary }} </p>
+        	</a>
+      	</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <!-- <div class="row">
+    <div class="col-lg-12">
+    	<h2>Projects I'm Following</h2>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="project in otherProjects">
+        <li class="project-abstract">
+        	<a href="/view-project/#{{project._id}}" tooltip="{{project.details}}">
+	        	<h4> {{ project.title }} </h4>
+	        	<p> {{ project.summary }} </p>
+        	</a>
+      	</li>
+      </ul>
+    </div>
+  </div> -->
+
+</div>
