@@ -1,0 +1,23 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <label><h1>Welcome to TeamForge</h1></label>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <br>
+      <h2>About TeamForge</h2>
+      <hr>
+      <p style="font-size:140%">TeamForge is an open environment to share your ideas and collaborate with friends, colleagues, or others who share your passion.</p>
+      <br>
+      <h2 class="page-header">Get Started:</h2>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="item in gettingStarted">
+        <li>
+          <a href="/{{item.link}}"><h4> {{ item.name }} </h4></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
