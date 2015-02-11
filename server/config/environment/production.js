@@ -4,7 +4,8 @@
 // =================================
 module.exports = {
   // Server IP
-  ip: process.env.OPENSHIFT_NODEJS_IP ||
+  ip: process.env.VCAP_APP_HOST ||
+    process.env.OPENSHIFT_NODEJS_IP ||
     process.env.IP ||
     undefined,
 
